@@ -335,3 +335,59 @@ body {
 .footer-copyright .btn{
 	margin-right: 0;	
 }
+/*свойства для catalog*/
+.header-logo {	
+	float:left;	
+}
+.header-logo a{	
+	line-height:14px;
+	display:block;
+	padding:0;
+	margin: 0;			
+}
+.header-logo img{	
+	width: 140px;
+	height: 72px;	
+}
+.catalog-title{
+	font-size:30px;
+	line-height:42px;
+}
+.breadcrumbs ul{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-size:0;	
+}
+.breadcrumbs li{
+	display:inline-block;
+	font-size:16px;
+	line-height: 20px;
+	vertical-align: top;
+	
+}
+.breadcrumbs a{
+	position:relative;
+	display:block;
+	padding-right: 40px;	
+	text-decoration: none;
+	color: white;
+}
+.breadcrumbs li:last-child a{
+	/*color:#aba9a7;*/
+	opacity: 0.5;
+}
+.breadcrumbs a::after {
+	content: "";
+	position:absolute;
+	bottom: 6px;
+	right: 20px;
+	display: block;
+	width: 7px;
+	height: 7px;	
+	background-color:#fff;
+	transform: rotate(45deg);	
+}
+.breadcrumbs li:last-child a::after{
+	display: none;	
+}
