@@ -23,8 +23,8 @@
 						<li>
 							<a href="#">Прайс-лист</a> 
 						</li>
-						<li>
-							<a href="#">Магазин</a> 
+						<li class="active">
+							<span>Магазин</span> 
 						</li>
 						<li>
 							<a href="#">Контакты</a> 
@@ -48,7 +48,7 @@
 							<a href="#">Магазин</a>
 						</li>
 						<li>
-							<a>Средства для ухода</a>
+							<span>Средства для ухода</span>
 						</li>
 					</ul>
 				</div>
@@ -92,7 +92,7 @@
 								<label for="radio2">Средства для ухода</label>
 							</li>
 							<li>
-								<input type="radio" name="ansewer-one" class="radio"id="radio3" value="Аксесуары" >
+								<input type="radio" name="ansewer-one" class="radio" id="radio3" value="Аксесуары" >
 								<label for="radio3">Аксесуары</label>
 							</li>
 						</ul>
@@ -102,7 +102,7 @@
 				<section class="catalog-items">
 					<div class="items-wrapper">
 						<article class="item">
-							<a href="#">
+							<a href="catalog-item.html">
 								<img src="img/catalog/baxer_1.jpg" width="220" height="165" alt="Набор для путешествий «Baxer of california»">
 								<h2 class="item-category">
 									Набор для путешествий
@@ -185,8 +185,8 @@
 							<li>
 								<a class="btn intems-pagination-btn" href="#">1</a> 
 							</li>
-							<li>
-								<a class="btn intems-pagination-btn" href="#">2</a> 
+							<li class="active">
+								<span class="btn intems-pagination-btn">2</span> 
 							</li>
 							<li>
 								<a class="btn intems-pagination-btn" href="#">3</a> 
@@ -220,6 +220,22 @@
 					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
 				</section>
 			</div>
-		</footer>		
+		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Ведите свой логин и пароль.</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<input class="icon-user" type="text" name="login" placeholder="Логин">
+				<input class="icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомнить меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+				<button class="btn" type="submit">Войти</button>			
+			</form>
+		</div>
 	</body>
 </html>

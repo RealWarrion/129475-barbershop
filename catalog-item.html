@@ -11,7 +11,7 @@
 			<div class="container clearfix">
 				<nav class="main-navigation">
 					<div class="header-logo">
-						<a href="#"><img src="img/logo_header.png" width="140" height="72" alt="Homepage"></a>
+						<a href="index.html"><img src="img/logo_header.png" width="140" height="72" alt="Homepage"></a>
 					</div>
 					<ul>						
 						<li>
@@ -23,8 +23,8 @@
 						<li>
 							<a href="#">Прайс-лист</a> 
 						</li>
-						<li>
-							<a href="#">Магазин</a> 
+						<li class="active">
+							<span>Магазин</span> 
 						</li>
 						<li>
 							<a href="#">Контакты</a> 
@@ -48,10 +48,10 @@
 						<a href="#">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Средства для ухода</a>
+						<a href="catalog.html">Средства для ухода</a>
 					</li>
 					<li>
-						<a href="#">Набор для путешествий «baxter of california»</a>
+						<span>Набор для путешествий «baxter of california»</span>
 					</li>
 				</ul>
 			</div>
@@ -126,5 +126,21 @@
 				</section>
 			</div>
 		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Ведите свой логин и пароль.</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<input class="icon-user" type="text" name="login" placeholder="Логин">
+				<input class="icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомнить меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+				<button class="btn" type="submit">Войти</button>			
+			</form>
+		</div>
 	</body>
 </html>
